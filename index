@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Alegreya+Sans+SC:400i|Poppins:300|Rajdhani|Sarpanch|Syncopate:400,700&display=swap');
+</style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
+    <link rel="stylesheet" type="text/css" href="css/grid_layout.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage_slideshow.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-inner">
+        <div>
+          <nav>
+            <ul>
+              <li><a href="Contact">Contact</a></li>
+              <li><a href="projects">Projects</a><li>
+              <li><a href="Portfolio">Portfolio</a></li>
+              <li><a href="My_Story">My Story</a></li>
+              <li><a href="index">Home</a></li>
+            </ul>
+          </nav>
+          <div id="siteTitleWrapper">
+            <h1 id="siteTitle"><a>Joe Summers</a>
+            </h1>
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Slideshow container -->
+
+    <div class="slideshow-cointainer">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="images/Techno Text" style="width:100%" alt="Tech-themed Text">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/tropical_space" style="width:100%" alt="Sci-Fi Tropical Landscape">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/WWRD" style="width:100%" alt="What Would Ronald Regan Do? Banner">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+<!-- Just some annoying scirpt here -->
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.lengh) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block"
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+  <main>
+    <h2 class="pageHeader">Welcome!</h2>
+    <p id="homePageParagraphStyle">Welcome to my portfolio site!</p>
+    <p id="homePageParagraphStyle">This is where your main content will go!</p>
+    <div class="row">
+      <div class="col-4">
+        <div id="myStory">
+          <h3 id="contentBlockHeader">My Story</h3>
+          <img src="images/cool_shades_bro" alt="Image of Joe" class="contentBlockImage">
+          <p class="contentBlockParagraph">As a self-taught developer
+            I have something to share as far as how I got to where I am
+            and where I plan on going.  If you'd like to learn a little
+            bit more about myself, please feel free to click the button below
+            to learn more!</p>
+          <div>
+            <button type="button" class="homepageButton">
+              <a href="My_Story">Click Here!</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div id="portfolio">
+          <h3 id="contentBlockHeader">Portfolio</h3>
+          <img src="images/Beta_Blue_Design_logo" alt="Beta Blue Prototype Logo" class="contentBlockImage">
+          <p class="contentBlockParagraph">Over the years, through self-teaching and
+            experiential problem-solving, I have had experience on both sides of the development
+            stack.  Please take some time and explore some of my work samples.  I have divided my portfolio
+            into two sections: Web Development and Graphic Design.  Please click the button below to learn
+            more</p>
+            <div>
+              <button type="button" class="homepageButton">
+                <a href="portfolio">Click Here!</a>
+              </button>
+            </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div id="projects">
+          <h3 id="contentBlockHeader">Projects</h3>
+          <p class="contentBlockParagraph">Coding projects are pretty essential when trying to demonstrate
+          your worth in what continues to be one of the fastest growing industries out there.  In addition to this website,
+        I have been consistenty working on projects to showcase and track my progress as a developer.  Please take a look at some of
+      the projects I have done recently and am working on now!</p>
+            <div>
+              <button type="button" class="homepageButton">
+                <a href="projects">Click Here!</a>
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <footer>
+      <p>Joe Summers Portfolio Site: All rights reserved.</p>
+    </footer>
+  </body>
+</html>

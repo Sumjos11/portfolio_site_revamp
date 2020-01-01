@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Alegreya+Sans+SC:400i|Poppins:300|Rajdhani|Sarpanch|Syncopate:400,700&display=swap');
+</style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
+    <link rel="stylesheet" type="text/css" href="css/grid_layout.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-inner">
+        <div>
+          <nav>
+            <ul>
+              <li><a href="Contact">Contact</a></li>
+              <li><a href="projects">Projects</a><li>
+              <li><a href="Portfolio">Portfolio</a></li>
+              <li><a href="My_Story">My Story</a></li>
+              <li><a href="index">Home</a></li>
+            </ul>
+          </nav>
+          <div id="siteTitleWrapper">
+            <h1 id="siteTitle"><a>Joe Summers</a>
+            </h1>
+          </div>
+          </div>
+        </div>
+    </header>
+  <main>
+    <h2 class="pageHeader">Contact</h2>
+    <p></p>
+  </main>
+  <footer>
+    <p>Joe Summers Portfolio Site: All rights reserved.</p>
+  </footer>
+  </body>
+
+</html>
